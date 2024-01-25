@@ -46,7 +46,7 @@ Else {
 function install_silent {
   Clear-Host
   Write-Host -ForegroundColor Cyan "Installing new Apps"
-  Set-Location 'C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.19.10173.0_x64__8wekyb3d8bbwe\'
+  Set-Location 'C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.21.3482.0_x64__8wekyb3d8bbwe\'
   foreach ($s in $software) {
     .\winget.exe install --id $s.Name --source $s.Source --scope $s.Scope --silent --accept-source-agreements
   }
